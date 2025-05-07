@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #355f8d;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+header .snake {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.hero, .dashboard {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2, .dashboard h2 {
+    font-size: 32px;
+    color: #2b5b84;
+    margin-bottom: 20px;
+}
+
+.hero p, .dashboard p {
+    font-size: 18px;
+    color: #444;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.login-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #2b5b84;
+    box-shadow: 0 0 5px rgba(43, 91, 132, 0.3);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.btn-blue {
+    background-color: #2b5b84;
+    color: #fff;
+}
+
+.btn-blue:hover {
+    background-color: #1e4262;
+    transform: scale(1.05);
+}
+
+.btn-yellow {
+    background-color: #ffd343;
+    color: #333;
+}
+
+.btn-yellow:hover {
+    background-color: #e6bc2f;
+    transform: scale(1.05);
+}
+
+.info-group {
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-group h3 {
+    font-size: 24px;
+    color: #2b5b84;
+    margin-bottom: 10px;
+}
+
+.info-group p {
+    font-size: 16px;
+    color: #444;
+    margin: 5px 0;
+}
+
+.note {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+ul, ol {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 8px;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #333;
+}
+
+footer {
+    background-color: #355f8d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffd343;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero h2, .dashboard h2 {
+        font-size: 24px;
+    }
+
+    .hero p, .dashboard p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .info-group h3 {
+        font-size: 20px;
+    }
+
+    .info-group p, ul, ol {
+        font-size: 14px;
+    }
+}

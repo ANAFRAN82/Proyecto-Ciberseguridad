@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><span class="snake">🐍</span>Python</h1>
+            <nav>
+                <a href="https://docs.python.org/es/3/" target="_blank">Documentación</a>
+                <a href="https://www.learnpython.org/es/" target="_blank">Tutoriales</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <p>
+                Python es el lenguaje perfecto para crear herramientas. Aprende programación, o automatiza tareas. ¡Inicia sesión para empezar!
+            </p>
+            <div class="login-box">
+                <form method="POST" action="{{ url_for('login') }}">
+                    <div class="input-group">
+                        <label for="username">Usuario</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-blue">Iniciar Sesión</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content"></div>
+            <p>
+                <a href="mailto:support@keylogger-etico.com">Contáctanos</a> |
+                <a href="https://www.python.org/community/" target="_blank">Comunidad Python</a> |
+                <a href="https://www.python.org/about/" target="_blank">Acerca de Python</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
